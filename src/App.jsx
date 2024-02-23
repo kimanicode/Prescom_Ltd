@@ -28,6 +28,7 @@ function App() {
 
         <Route path='/team' element={<Team />} />
         <Route path='/why-prescom' element={<AboutUs />} />
+        <Route path='/contact-us' element={<Contact />} />
         
       
       

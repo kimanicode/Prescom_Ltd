@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { LocateIcon, Mail, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 import Banner from '../assets/image4.jpg'
+import axios from "axios";
+
+
 
 
 const Contact = () => {
@@ -11,36 +14,63 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone:"",
     message: "",
   });
   const [success, setSuccess] = useState(false)
   const [empty, setEmpty] = useState(false)
 
-  const handleInputChange = (event) => {
+  const handleInputChange =  (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault(); 
-    
-    
-    setFormData({
-      name: "",
-      email: "",
-      phone:"",
-      message: "",
-    })
-    if( formData.message !== '' ){
-    setSuccess(true)
-    setEmpty(false)
-    
-    }
-    if (formData.message == '' && formData.email == '' && formData.name == '') {
-      setEmpty(true)
-    }
 
-    console.log(formData)
+    try {
+      const response = await axios.post('https://prescom-api.onrender.com/api/v1/admin/submit', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+          // Additional headers if needed
+        },
+      });
+      console.log('Data sent successfully:', response.data);
+      setSuccess(true);
+      setEmpty(false);
+    } catch (error) {
+      console.error('Error sending data:', error.message);
+      setEmpty(true);
+      setSuccess(false);
+    }
+        // Reset form data
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      
+    
+    
+    
+    
+    // setFormData({
+    //   name: "",
+    //   email: "",
+    //   phone:"",
+    //   message: "",
+    // })
+    // if( formData.message !== '' ){
+    // setSuccess(true)
+    // setEmpty(false)
+    
+    // }
+    // if (formData.message == '' && formData.email == '' && formData.name == '') {
+    //   setEmpty(true)
+    // }
+
+    // console.log(formData)
     
     
   };

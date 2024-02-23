@@ -2,6 +2,7 @@ import { MapPin } from "lucide-react";
 import { useState,useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 const ProjectCard = ({ imageUrl, title, description, location }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -27,6 +28,7 @@ const ProjectCard = ({ imageUrl, title, description, location }) => {
               
        src={imageUrl}
         alt={title}
+        loading="lazy"
       />
 
       <div className="px-6 py-4 flex flex-col justify-between items-stretch">

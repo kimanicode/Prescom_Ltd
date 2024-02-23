@@ -44,7 +44,7 @@ export default function Header() {
                     </li>
                 </ul>
                 <div className="flex pl-2 "> 
-                  <button className='px-6 py-2 text-myOrange  rounded-full bg-transparent border-[2px]  border-myOrange mx-3 hover:bg-myBlue hover:border-myBlue hover:text-white ' >Contact Us</button>
+                  <button className='px-6 py-2 text-myOrange  rounded-full bg-transparent border-[2px]  border-myOrange mx-3 hover:bg-myBlue hover:border-myBlue hover:text-white ' ><Link to='/contact-us'>Contact Us</Link></button>
                   </div>
             </div>
          
@@ -75,7 +75,7 @@ export default function Header() {
               <li className="hover:text-celadon py-2 text-white  border-b-[1px]" onClick={handleClick}><Link to='/services'>Services</Link></li>
 
               <li className="hover:text-celadon  py-2 text-white  border-b-[1px]" onClick={handleClick}><Link to='/projects'>Projects</Link></li>
-              <li className="hover:text-celadon  py-2 text-white  border-b-[1px]" onClick={handleClick}><Link to='/quotation'>Quotation</Link></li>
+              <li className="hover:text-celadon  py-2 text-white  border-b-[1px]" onClick={handleClick}><Link to='/contact-us'>Quotation</Link></li>
               
          
 
@@ -85,7 +85,7 @@ export default function Header() {
                 <div className='flex justify-center ' >
                 
                   
-                  <Button >Contact Us</Button>
+                  <Button ><Link to='/contact-us'>Contact Us</Link></Button>
 
                 </div>
 

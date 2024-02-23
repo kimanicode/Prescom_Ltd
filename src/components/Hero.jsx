@@ -1,5 +1,7 @@
 import Banner from '../assets/earth.jpg'
 import { Button } from "@/components/ui/button"
+import { Link } from 'react-router-dom';
+
 
 export const Hero = () => {
   return (
@@ -23,7 +25,9 @@ export const Hero = () => {
 
         <div className='flex gap-6 md:flex-row flex-col'> 
           
-          <Button className='rounded-full  bg-myOrange  md:w-[200px] hover:bg-myOrange/80 '>Get Quotation</Button>
+          <Button className='rounded-full  bg-myOrange  md:w-[200px] hover:bg-myOrange/80 '>
+            <Link to='/contact-us'>Get Quotation</Link>
+          </Button>
 
           <Button className='bg-outline border-white hover:border-myBlue border-2 rounded-full md:w-[200px] hover:bg-myBlue'>Learn More</Button>
         </div> 
