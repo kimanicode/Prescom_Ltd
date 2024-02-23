@@ -23,7 +23,7 @@ export default function Header() {
    <div className=" top-0 z-10   w-full  bg-white sticky ">
 
         <div className="flex justify-between items-center  ">
-            <div className="font-bold text-white md:py-2 px-10 py-2   "> 
+            <div className="font-bold text-white md:py-2 md:px-8 py-2   "> 
             <Link to='/'> 
               <img src={logo} className="md:w-3/4 w-full "/>
             </Link>        

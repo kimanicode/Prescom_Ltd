@@ -17,36 +17,42 @@ const Projects = () => {
             imageUrl={imageUrl}
             title="CCTV and WIFI Installation"
             description="Supply, Install, Test and Commission"
+            location='JKIA Nairobi'
          />
 
         <ProjectCard
             imageUrl={maint}
             title="Maintenance"
             description="Maintenance of computers, Printers,servers, scanners, Projectors and other ICT equipment"
+            location='Kiambu County Government'
          />
 
 <ProjectCard
             imageUrl={wan}
             title="LAN,WIFI and IP Telephony"
             description="Support ,Service and Maintenance."
+            location='JKIA Nairobi'
          />
 
         <ProjectCard
             imageUrl={server}
             title="Supply of servers"
-            description="This is a brief description of the awesome project. It highlights key features and benefits of the project."
+            description="Supply, Install, Test, and Commission."
+            location='ST Andrews College -Kirinyaga'
          />
 
         < ProjectCard
             imageUrl={imageUrl}
             title="LAN and WAN"
             description="Design ,supply , install, test and commission ."
+            location='Phoenix Aviation'
          />
 
         <ProjectCard
             imageUrl={wifi}
             title="WIFI Installation"
-            description="This is a brief description of the awesome project. It highlights key features and benefits of the project."
+            description="Support, Service, and Maintenance"
+            location='Abercrombie and Kent- MSA Rd'
          />
          </div>
 
