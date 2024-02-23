@@ -1,5 +1,7 @@
 import { MapPin } from "lucide-react";
 import { useState,useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const ProjectCard = ({ imageUrl, title, description, location }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -20,9 +22,10 @@ const ProjectCard = ({ imageUrl, title, description, location }) => {
 
   return (
     <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
-      <img
+      <LazyLoadImage
         className={`w-full h-48 object-cover object-center ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-        src={imageUrl}
+              
+       src={imageUrl}
         alt={title}
       />
 
