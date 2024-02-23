@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import myImage from '../assets/us.jpg'
+import myImage from '../assets/us-min.jpg'
 
 const AboutUs = () => {
   return (

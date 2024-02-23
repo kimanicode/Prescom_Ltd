@@ -1,6 +1,6 @@
 //import { FcMoneyTransfer, FcBarChart, FcWorkflow  } from "react-icons/fc";
 import { LayoutGrid } from 'lucide-react'
-import myImage from '../assets/us.jpg'
+import myImage from '../assets/us-min.jpg'
 
   
 

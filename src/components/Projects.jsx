@@ -1,9 +1,9 @@
 import ProjectCard from "./ProjectCard"
-import imageUrl from '../assets/cctv.jpg'
-import maint from '../assets/maint.jpg'
-import wan from '../assets/wan.jpg'
-import server from '../assets/server.jpg'
-import wifi from '../assets/wifi.jpg'
+import imageUrl from '../assets/cctv-min.jpg'
+import maint from '../assets/maint-min.jpg'
+import wan from '../assets/wan-min.jpg'
+import server from '../assets/server-min.jpg'
+import wifi from '../assets/wifi-min.jpg'
 
 
 
@@ -12,7 +12,7 @@ const Projects = () => {
     <div className="px-8 py-3 md:pb-8 bg-white w-full">  
          <h1 className="font-bold md:text-4xl   text-2xl text-center md:py-6  py-3 text-myOrange">Recent Projects</h1>
 
-         <div className="flex gap-6 flex-wrap">
+         <div className="grid md:grid-cols-3 gap-4">
          <ProjectCard
             imageUrl={imageUrl}
             title="CCTV and WIFI Installation"
