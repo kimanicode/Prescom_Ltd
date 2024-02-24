@@ -55,22 +55,8 @@ const Contact = () => {
     
     
     
-    // setFormData({
-    //   name: "",
-    //   email: "",
-    //   phone:"",
-    //   message: "",
-    // })
-    // if( formData.message !== '' ){
-    // setSuccess(true)
-    // setEmpty(false)
+   
     
-    // }
-    // if (formData.message == '' && formData.email == '' && formData.name == '') {
-    //   setEmpty(true)
-    // }
-
-    // console.log(formData)
     
     
   };
@@ -81,22 +67,19 @@ const Contact = () => {
 
 
   return (
-    <div className='w-full   px-8 py-4 bg-myblue text-center relative ' id='contact'> 
+    <div className='w-full   px-8 py-4 bg-myblue text-center md:relative ' id='contact'> 
      <img
           src={Banner}
           alt="Banner Image"
-          className="w-screen shadow-md md:h-[70%] h-screen bg-myOrange "
+          className="w-screen shadow-md md:h-[70%] h-screen bg-myOrange hidden md:flex "
         />
     {/* <p className='text-3xl  text-myOrange font-bold  py-5'>Contact Us</p> */}
 
 
-        <div className='flex md:flex-row flex-col justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-400 p-7'>
+        <div className='flex md:flex-row flex-col justify-between md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 bg-gray-400 p-7'>
           <div className='p'>
             <p className='text-white font-bold text-2xl text-start '>Get in touch</p>
-            {/* <span className='text-gray-300'>
-              Please feel free to reach out to us at any time!
-
-            </span> */}
+            
 
 
             <div className='py-7 '>
